@@ -11,9 +11,12 @@
  ● Nvim
 
  ● Pyhton
+
 ## how to run
 
 ```bash
+pkg install python -y
 cd nvnotes
+python install.py
 python NVNotes.py
 ```
