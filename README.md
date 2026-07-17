@@ -8,5 +8,12 @@
 
  ● Termux
 
- ● Python
+ ● Nvim
 
+ ● Pyhton
+## how to run
+
+```bash
+cd nvnotes
+python NVNotes.py
+```
