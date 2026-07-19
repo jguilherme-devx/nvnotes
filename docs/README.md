@@ -26,10 +26,10 @@
 ## Installation
 
 ```bash
-pkg install python -y
+pkg install python git -y
 git clone https://github.com/jguilherme-devx/nvnotes.git
 cd nvnotes
-python install.py
+python scripts/install.py
 ```
 
 ## Running
