@@ -1,18 +1,20 @@
 import time
 import subprocess as sp
+from os.path import expanduser
 from rich.console import Console
 from rich.markdown import Markdown
 from pathlib import Path
 
+saves = expanduser("~/.config/nvnotes/saves")
+
 try:
-    sp.run(["mkdir", "/data/data/com.termux/files/home/.config/NVNotes"])
+    sp.run(["mkdir", "-p", saves]) 
 except:
     pass
 
 console = Console()
-saves = "/data/data/com.termux/files/home/.config/NVNotes"
-pasta = Path("/data/data/com.termux/files/home/.config/NVNotes")
-title = "/data/data/com.termux/files/home/NVNotes-project/title.txt"
+pasta = Path(saves)
+title = expanduser("~/nvnotes/assets/text/title.txt")
 notes_totais = []
 
 for notes in pasta.iterdir():
