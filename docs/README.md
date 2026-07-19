@@ -19,6 +19,8 @@
 
  ● Nvim
 
+ ● git
+
  ● Pyhton
 
 ## Installation
